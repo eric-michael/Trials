@@ -9,19 +9,20 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 [Node](https://nodejs.org/en/)
 
-Check your version.
+Check your version to ensure you have Node installed.
 
 ```
-node --version
+~$ node --version
+~$ v8.9.4
 ```
 
 From the project folder in the command line, run the server.js file
 
 ```
-node server
+~$ node server
 ```
 
-Visit [localhost:3000](localhost:3000) and you should see it running.
+From there, visit localhost:3000 and you should see it running.
 For fun, try the /hello or /bye routes.
 
 ## Built With
