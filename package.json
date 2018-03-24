@@ -1,0 +1,25 @@
+{
+  "name": "Trials",
+  "version": "1.0.0",
+  "description": "Practice crap",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "json-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travisbashor/Trials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travisbashor/Trials/issues"
+  },
+  "homepage": "https://github.com/travisbashor/Trials#readme"
+}

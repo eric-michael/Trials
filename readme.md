@@ -12,17 +12,23 @@ These instructions will get you a copy of the project up and running on your loc
 Check your version to ensure you have Node installed.
 
 ```
-~$ node --version
-~$ v8.9.4
+~/ $ node --version
+~/ $ v8.9.4
 ```
 
-From the project folder in the command line, run the server.js file
+Make a node_modules folder in your project folder
 
 ```
-~$ node server
+~/Trials $ npm init
 ```
 
-From there, visit localhost:3000 and you should see it running.
+Run server.js using the 'node' command (.js extension optionally omitted)
+
+```
+~/Trials $ node server
+```
+
+From there, visit your [localhost:3000](http://localhost:3000) and you should see it running.
 For fun, try the /hello or /bye routes.
 
 ## Built With
@@ -44,4 +50,4 @@ See also the list of [contributors](https://github.com/travisbashor/Trials/contr
 ## Acknowledgments
 
 * Codeschool, for challenge inspiration
-* Bowser Ann B-Dawg Lewis, First of His Name
+* Bowser Ann B-Dawg Lewis, First of His Name, for everything
