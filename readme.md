@@ -25,7 +25,7 @@ Make a node_modules folder in your project folder
 Run server.js using the 'node' command (.js extension optionally omitted)
 
 ```
-~/Trials $ node server
+~/Trials $ npm start
 ```
 
 From there, visit your [localhost:3000](http://localhost:3000) and you should see it running.
