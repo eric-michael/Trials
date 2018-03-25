@@ -1,14 +1,25 @@
-const http = require('http');
+// express for route-handling
+const express = require('express')
+const app = express()
 
-const hostname = '127.0.0.1';
-const port = 3000;
+// host:port config
+const hostname = '127.0.0.1'
+const PORT = process.env.PORT || 3000
 
-const server = http.createServer((request, response) => {
-  response.statusCode = 200;
-  response.setHeader('Content-Type', 'text/plain');
-  response.end('Hello World!\n');
-});
+// TODO: use express static to guide home index visitors to index.html in public folder
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+// routing
+let index = require('./routes/index')
+app.use('/', index)
+
+let hello = require('./routes/hello')
+app.use('/hello', hello)
+
+let bye = require('./routes/bye')
+app.use('/bye', bye)
+
+let people = require('./routes/people')
+app.use('/people', people)
+
+app.listen(PORT)
+console.log(`Server is listening at http://${hostname}:${PORT}`)

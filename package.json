@@ -2,7 +2,7 @@
   "name": "Trials",
   "version": "1.0.0",
   "description": "Practice crap",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "express": "^4.16.3",
     "json-server": "^0.12.1"
@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

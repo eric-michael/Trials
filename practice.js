@@ -1,15 +1,6 @@
 var express = require('express')
 var app = express()
-var people = [
-  {
-    "name": "Narcissus",
-    "age": 4,
-  },
-  {
-    "name": "Nemesis",
-    "age": 5
-  }
-]
+
 app.get('/', (request, response) => {
   var locations = ['Clearwater', 'Orlando', 'Tampa', 'Boston']
   response.send(locations)
