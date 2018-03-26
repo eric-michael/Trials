@@ -2,12 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 // import list of fake people from mocks
-var people = require('../mocks.ts');
+const mocks = require('../mocks.ts');
+const numUsers = 5;
+const people = mocks.generateUsers(numUsers);
 
 router.route('/')
   .get( (request, response) => {
-    console.log('Listing people');
-    response.json(people);
+    response.send(people);
+    console.log('Listing users');
   });
 
 module.exports = router;

@@ -18,8 +18,8 @@ app.use('/hello', hello)
 let bye = require('./routes/bye')
 app.use('/bye', bye)
 
-let people = require('./routes/people')
-app.use('/people', people)
+let users = require('./routes/users')
+app.use('/api/users', users)
 
 app.listen(PORT)
 console.log(`Server is listening at http://${hostname}:${PORT}`)
