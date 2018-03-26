@@ -6,8 +6,6 @@ const app = express()
 const hostname = 'localhost'
 const PORT = process.env.PORT || 3000
 
-// TODO: use express static to guide home index visitors to index.html in public folder
-
 // routing
 let index = require('./routes/index')
 app.use('/', index)
