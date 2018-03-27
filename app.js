@@ -4,7 +4,7 @@ const app = express()
 
 // host:port config
 const hostname = 'localhost'
-const PORT = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 // routing
 let index = require('./routes/index')
@@ -17,7 +17,7 @@ let bye = require('./routes/bye')
 app.use('/bye', bye)
 
 let users = require('./routes/users')
-app.use('/api/users', users)
+app.use('/users', users)
 
-app.listen(PORT)
-console.log(`Server is listening at http://${hostname}:${PORT}`)
+app.listen(port)
+console.log(`Server is listening at http://${hostname}:${port}`)

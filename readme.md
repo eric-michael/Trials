@@ -35,7 +35,7 @@ If you want to see your changes update without having to restart the server, run
 ```
 
 From there, visit your [localhost:3000](http://localhost:3000) and you should see it running.
-For fun, try the /hello, /bye, api/users routes.
+For fun, try the /hello, /bye, and /users routes.
 
 ## Built With
 
