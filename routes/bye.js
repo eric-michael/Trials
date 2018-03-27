@@ -1,11 +1,14 @@
 var express = require('express')
 var router = express.Router();
-var path = require('path');
 
+var config = {
+  title: "Bye",
+  message: "Parting is such sweet sorrow"
+}
 router.route('/')
   .get( (request, response) => {
-    console.log('Parting is such sweet sorrow');
-    response.sendFile(path.join(__dirname, '../public', 'bye.html'));
+    console.log(config.message);
+    response.render('bye', config);
   });
 
 module.exports = router;
