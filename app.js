@@ -8,10 +8,10 @@ const path = require('path')
 const hostname = 'localhost'
 const port = process.env.PORT || 3000
 
-// Register '.mustache' extension with The Mustache Express
+// register '.mustache' extension with The Mustache Express
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
-app.set('views', path.join(__dirname + '/public'));
+app.set('views', path.join(__dirname, '/public'));
 
 // routing
 let index = require('./routes/index')
