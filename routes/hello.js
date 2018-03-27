@@ -1,11 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var path = require('path');
+
+// page details
+var config = {
+  title: "Hello",
+  message: "Hello, there!"
+};
 
 router.route('/')
   .get( (request, response) => {
-    console.log('Hello, there!');
-    response.sendFile(path.join(__dirname, '../public', 'hello.html'));
+    console.log(config.message);
+    response.render('hello', config);
   });
 
 module.exports = router;

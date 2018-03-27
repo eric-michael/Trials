@@ -1,10 +1,17 @@
 // express for route-handling
 const express = require('express')
 const app = express()
+const mustacheExpress = require('mustache-express')
+const path = require('path')
 
 // host:port config
 const hostname = 'localhost'
 const port = process.env.PORT || 3000
+
+// Register '.mustache' extension with The Mustache Express
+app.engine('mustache', mustacheExpress());
+app.set('view engine', 'mustache');
+app.set('views', path.join(__dirname + '/public'));
 
 // routing
 let index = require('./routes/index')
